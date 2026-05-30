@@ -1,0 +1,28 @@
+try:
+    num1 = int(input("Enter number 1: "))
+except ValueError:
+    print("Invalid input. Using 0 as the default value.")
+    num1 = 0
+
+try:
+    num2 = int(input("Enter number 2: "))
+except ValueError:
+    print("Invalid input. Using 0 as the default value.")
+    num2 = 0
+
+try:
+    num3 = int(input("Enter number 3: "))
+except ValueError:
+    print("Invalid input. Using 0 as the default value.")
+    num3 = 0
+
+total = num1 + num2 + num3
+average = total / 3
+
+print("\nNumbers entered:")
+print(num1)
+print(num2)
+print(num3)
+
+print(f"\nSum: {total}")
+print(f"Average: {average:.2f}")
